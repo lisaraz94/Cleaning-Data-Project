@@ -1,0 +1,24 @@
+---
+title: "README"
+output: html_document
+---
+
+## Repository:
+
+* README.Rmd: dataset overview and steps taken to transform it
+* CODEBOOK.Rmd: content of the data set and how it was transformed
+* run_analysis.R: script that generates the tidy data
+* tidy_data.csv: tidy data that averages each variable by subject and activity type
+
+## User Information
+After checking out run_analysis.R modify line 10 to your working directory and then run the script. It will download the experiment information from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones, transform it using the steps in CODEBOOK.Rmd, and generate a tidy_data.csv file in the working directory
+
+## Project Summary
+Project instructions: 
+
+1. Merges the training and the test sets to create one data set
+2. Extracts only the measurements on the mean and standard deviation for each measurement
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive variable names
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
+
