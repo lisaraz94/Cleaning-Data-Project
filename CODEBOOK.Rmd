@@ -5,29 +5,6 @@ output: html_document
 ## DATA
 The output tidy_data.txt is based on an experiment where activity data was collected from 30 participants using the accelerometer and gyroscope in the subjects' Samsung Galaxy X Smartphones. The first row is the column names and the subsequent rows are the averages of each variable by subject and activity type. Additional information on the study can be found here:   http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones as well as the README.txt file once the data is unzipped
 
-## Transformations
-1. Downloads data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip where information on Human Activity Recognition of 30 subjects carrying Samsung Galaxy X Smartphones is stored
-
-2. Unzips the data into a directory specified by the user in setwd()
-
-3. Reads in the data stored in the 2 folders unzipped in the directory: train and test
-
-4. Assigns column names to training and test data and uses the information from the features
-file to label the activity type
-
-5. Merges training and test data
-
-6. Extracts only the columns that contain mean and standard deviation
-
-7. Joins the descriptive activity type data to the merged table based on the activity id to create a descriptive activity type column
-
-8. Loops through the column names to replace the variable names with more descriptive ones
-using regular expressions in order to make the data more user-friendly
-
-9. A second tidy data set is created that averages each variable by subject and activity type
-
-10. Writes a txt file with the tidy data to the user's directory
-
 ## Dataset files
 * features_info.txt: Shows information about the variables used
 * features.txt: List of all features (variables)
