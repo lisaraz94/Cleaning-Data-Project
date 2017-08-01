@@ -81,7 +81,7 @@ tidy_data <- data.table(final_data)
 tidy_data <-aggregate(. ~Subject + ActivityType, tidy_data, mean)
 tidy_data <- tidy_data[order(tidy_data$Subject,tidy_data$ActivityType),]
 
-write.csv(tidy_data, file = "tidy_data.csv", row.names = FALSE)
+write.table(tidy_data, file = "tidy_data.txt", row.names = FALSE)
 
 
 
